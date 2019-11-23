@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/statistics"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/appBarLayout"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1.0"
+        android:lineSpacingExtra="10dp"
+        android:maxLines="700"
+        android:paddingBottom="175dp"
+        android:scrollbars="vertical"
+        android:text="Statistics"
+        android:textColor="@color/text"
+        android:textSize="50dp" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
+        android:layout_alignTop="@+id/stats"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/strength" />
+
+    <TextView
+        android:id="@+id/str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-159dp"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:text="Strength: "
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/str"
+        android:layout_alignLeft="@+id/str"
+        android:layout_alignTop="@+id/str"
+        android:layout_alignRight="@+id/str"
+        android:layout_alignBottom="@+id/str"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-75dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/text" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="101dp"
+        android:layout_height="93dp"
+        android:layout_alignStart="@+id/appBarLayout"
+        android:layout_alignTop="@+id/appBarLayout"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="243dp"
+        app:srcCompat="@drawable/intelligence" />
+
+    <TextView
+        android:id="@+id/intel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-64dp"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:text="Intelligence: "
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/intelligence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/intel"
+        android:layout_alignLeft="@+id/intel"
+        android:layout_alignTop="@+id/intel"
+        android:layout_alignRight="@+id/intel"
+        android:layout_alignBottom="@+id/intel"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-22dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/text" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="76dp"
+        android:layout_height="115dp"
+        android:layout_alignStart="@+id/appBarLayout"
+        android:layout_alignTop="@+id/appBarLayout"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="342dp"
+        app:srcCompat="@drawable/agility" />
+
+    <TextView
+        android:id="@+id/agi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_marginStart="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-67dp"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:text="Agility: "
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/agility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/agi"
+        android:layout_alignLeft="@+id/agi"
+        android:layout_alignTop="@+id/agi"
+        android:layout_alignRight="@+id/agi"
+        android:layout_alignBottom="@+id/agi"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-43dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/text" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="112dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/appBarLayout"
+        android:layout_alignTop="@+id/appBarLayout"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="470dp"
+        app:srcCompat="@drawable/charm" />
+
+    <TextView
+        android:id="@+id/cha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-48dp"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:text="Charm: "
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/charm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cha"
+        android:layout_alignLeft="@+id/cha"
+        android:layout_alignTop="@+id/cha"
+        android:layout_alignRight="@+id/cha"
+        android:layout_alignBottom="@+id/cha"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-47dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/text" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="112dp"
+        android:layout_height="83dp"
+        android:layout_alignStart="@+id/appBarLayout"
+        android:layout_alignTop="@+id/appBarLayout"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="565dp"
+        app:srcCompat="@drawable/luck" />
+
+    <TextView
+        android:id="@+id/luc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-38dp"
+        android:layout_marginBottom="-1dp"
+        android:gravity="center"
+        android:text="Luck: "
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/luck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/luc"
+        android:layout_alignLeft="@+id/luc"
+        android:layout_alignTop="@+id/luc"
+        android:layout_alignRight="@+id/luc"
+        android:layout_alignBottom="@+id/luc"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="-34dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/text" />
+
+
+
+
+    <Button
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:text="Resume"
+        android:textSize="20dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text"
+        android:typeface="serif" />
+
+
+</RelativeLayout>
