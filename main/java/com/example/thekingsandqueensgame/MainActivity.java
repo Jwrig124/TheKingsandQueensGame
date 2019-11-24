@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// Date of creation - 11/20/2019
+// GAME MAIN MENU
+
 public class MainActivity extends AppCompatActivity {
     private Button newGame;
 

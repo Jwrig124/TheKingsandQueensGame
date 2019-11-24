@@ -1,0 +1,57 @@
+Log to keep track of all choices so I dont forget
+Different pages for different choices. Some choices dependent on others, etc.
+THE LOWER THE NUMBER = TRUE PATH IN ANY GIVEN ORDER, SO C3 IS TRUE PATH, C4 IS OFF ROUTE.
+Another example would be if given choices c5, c6, c7, c5 would be the true route, no deviation.
+
+c1 - Simple continue, no choice (leads to page 2)
+c2 - Continue, no choice (leads to page 3)
+c3 - Remain calm and explain - charm + 1 (page 4)
+c4 - Panic and deny the accusation - alt dialogue (page 5)
+MAX POSSIBLE CHARM BY c4 = 1
+c5 = Continue, no choice (page 6)
+
+                                        COPY PASTE FORMAT
+
+                                    c1 = findViewById(R.id.c1);
+                                    c1.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View c1) {
+                                            switch (c1.getId()) {
+                                                case R.id.c1:
+                                                    setContentView(R.layout.page2);
+                                                    Toolbar toolbar = findViewById(R.id.toolbar);
+                                                    setSupportActionBar(toolbar);
+                                                    c2 = findViewById(R.id.c2);
+                                                    c2.setOnClickListener(this);
+                                                    choiceCounter = 1;
+                                                    break;
+                                                case R.id.c2:
+                                                    setContentView(R.layout.page3);
+                                                    Toolbar toolbar2 = findViewById(R.id.toolbar);
+                                                    setSupportActionBar(toolbar2);
+                                                    c3 = findViewById(R.id.c3);
+                                                    c3.setOnClickListener(this);
+                                                    c4 = findViewById(R.id.c4);
+                                                    c4.setOnClickListener(this);
+                                                    choiceCounter = 2;
+                                                    break;
+                                                case R.id.c3:
+                                                    Charm++;
+                                                    setContentView(R.layout.page4);
+                                                    Toolbar toolbar3 = findViewById(R.id.toolbar);
+                                                    setSupportActionBar(toolbar3);
+                                                    c5 = findViewById(R.id.c5);
+                                                    c5.setOnClickListener(this);
+                                                    choiceCounter = 3;
+                                                    break;
+                                                case R.id.c4:
+                                                    setContentView(R.layout.page5);
+                                                    Toolbar toolbar4 = findViewById(R.id.toolbar);
+                                                    setSupportActionBar(toolbar4);
+                                                    c5 = findViewById(R.id.c5);
+                                                    c5.setOnClickListener(this);
+                                                    choiceCounter = 4;
+                                                    break;
+                                            }
+                                        }
+                                    });
