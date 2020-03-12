@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:id="@+id/p2"
         android:background="@color/background"
-        tools:context=".MainActivity">
+        tools:context=".MainMenu">
 
         <include
             android:id="@+id/appBarLayout"

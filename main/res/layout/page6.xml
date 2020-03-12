@@ -15,7 +15,7 @@
         android:id="@+id/p5"
         android:layout_height="match_parent"
         android:background="@color/background"
-        tools:context=".MainActivity">
+        tools:context=".MainMenu">
 
         <include
             android:id="@+id/appBarLayout"
@@ -33,7 +33,7 @@
             android:lineSpacingExtra="10dp"
             android:maxLines="700"
             android:scrollbars="vertical"
-            android:text="blank"
+            android:text="@string/page_6"
             android:textColor="@color/text"
             android:textSize="16dp"
             android:paddingBottom="175dp"/>
