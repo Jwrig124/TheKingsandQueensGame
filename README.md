@@ -1,2 +1,2 @@
 # TheKingsandQueensGame
-Original novel with choose your own adventure elements.
+Original novel built in Android + Java with choose your own adventure elements.
